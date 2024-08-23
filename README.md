@@ -37,8 +37,67 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
 
+# IMPORT LIBRARIES
+```python
+from google.colab import files
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+```
+# READ THE DATASET FROM DRIVE
+```python
+df=pd.read_csv('neural.csv')
+print(df)
+```
+# SPLIT THE DATASET
+```python
+X=df.iloc[:, :-1].values
+print(X)
+Y=df.iloc[:, -1].values
+print(Y)
+```
+# FINDING MISSING VALUES
+```python
+print(df.isnull().sum())
+```
+# HANDLING MISSING VALUES
+```python
+df.describe()
+```
+# CHECK FOR DUPLICATES
+```python
+df.duplicated()
+```
+# DETECT OUTLIERS
+```python
+df.describe()
+```
+# DROPPING STRING VALUES DATA FROM DATASET:
+```python
+data = df.drop(['Surname', 'Geography','Gender'], axis=1)
+```
+```python
+data.head()
+```
+# NORMALIZE THE DATASET (MINMAX SCALER)
+```python
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(data))
+print(df1)
+```
+# SPLITTING THE DATA FOR TRAINING & TESTING
+```python
+X_train ,X_test ,Y_train,Y_test=train_test_split(X,Y,test_size=0.2)
+print("X_train\n")
+print(X_train)
+print("\nLenght of X_train ",len(X_train))
+print("\nX_test\n")
+print(X_test)
+print("\nLenght of X_test ",len(X_test))
+```
 
 ## OUTPUT:
 SHOW YOUR OUTPUT HERE
