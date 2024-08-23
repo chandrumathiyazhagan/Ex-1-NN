@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME : M.CHANDRU</H3>
+<H3>ENTER YOUR REGISTER NO : 212222230026</H3>
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>DATE : 22-08-2024</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -105,22 +105,22 @@ print("\nLenght of X_test ",len(X_test))
 ![Screenshot 2024-08-23 214023](https://github.com/user-attachments/assets/ed7528c4-f262-4420-9ed0-737c76e6b0ca)
 
 # SPLIT THE DATASET:
-## X
+# X
 ![Screenshot 2024-08-23 214039](https://github.com/user-attachments/assets/670c9242-5b81-4c6d-9d51-236d5b07c915)
 
-## Y
+# Y
 ![Screenshot 2024-08-23 214049](https://github.com/user-attachments/assets/8aa8e8dd-9e7e-4a4f-81b3-7ebf979ee567)
 
-# Missing Data
+# MISSING DATA:
 ![Screenshot 2024-08-23 214057](https://github.com/user-attachments/assets/dbe9f7c1-8cc3-4764-97e6-68f438de0107)
 
-# Duplicates identification
-![Screenshot 2024-08-23 214123](https://github.com/user-attachments/assets/4352b4bd-f06b-4222-85fb-0d037199c598)
-
-# DESCRIBING DATASET
+# DUPLICATES IDENTIFICATION:
 ![Screenshot 2024-08-23 214130](https://github.com/user-attachments/assets/262c7cd0-ca85-4449-be0e-156389177230)
 
-# DETECT OUTLIERS
+# DESCRIBING DATASET:
+![Screenshot 2024-08-23 214123](https://github.com/user-attachments/assets/4352b4bd-f06b-4222-85fb-0d037199c598)
+
+# DETECT OUTLIERS:
 ![Screenshot 2024-08-23 214141](https://github.com/user-attachments/assets/3931e50a-9adf-44f5-94a3-df992b0970ec)
 
 # NORMALIZED  DATASET:
