@@ -69,7 +69,7 @@ print(df.isnull().sum())
 ```python
 df.describe()
 ```
-# CHECK FOR DUPLICATES:
+## CHECK FOR DUPLICATES:
 ```python
 df.duplicated()
 ```
@@ -103,32 +103,32 @@ print("\nLenght of X_test ",len(X_test))
 
 ## OUTPUT:
 
-# DATASET:
+## DATASET:
 ![Screenshot 2024-08-23 214023](https://github.com/user-attachments/assets/ed7528c4-f262-4420-9ed0-737c76e6b0ca)
 
-# SPLIT THE DATASET:
+## SPLIT THE DATASET:
 ### X
 ![Screenshot 2024-08-23 214039](https://github.com/user-attachments/assets/670c9242-5b81-4c6d-9d51-236d5b07c915)
 
 ### Y
 ![Screenshot 2024-08-23 214049](https://github.com/user-attachments/assets/8aa8e8dd-9e7e-4a4f-81b3-7ebf979ee567)
 
-# MISSING DATA:
+## MISSING DATA:
 ![Screenshot 2024-08-23 214057](https://github.com/user-attachments/assets/dbe9f7c1-8cc3-4764-97e6-68f438de0107)
 
-# DUPLICATES IDENTIFICATION:
+## DUPLICATES IDENTIFICATION:
 ![Screenshot 2024-08-23 214130](https://github.com/user-attachments/assets/262c7cd0-ca85-4449-be0e-156389177230)
 
-# DESCRIBING DATASET:
+## DESCRIBING DATASET:
 ![Screenshot 2024-08-23 214123](https://github.com/user-attachments/assets/4352b4bd-f06b-4222-85fb-0d037199c598)
 
-# DETECT OUTLIERS:
+## DETECT OUTLIERS:
 ![Screenshot 2024-08-23 214141](https://github.com/user-attachments/assets/3931e50a-9adf-44f5-94a3-df992b0970ec)
 
-# NORMALIZED  DATASET:
+## NORMALIZED  DATASET:
 ![Screenshot 2024-08-23 214153](https://github.com/user-attachments/assets/5f87914d-d939-4086-bf86-e51e11e64bed)
 
-# TRAINING & TESTING MODEL:
+## TRAINING & TESTING MODEL:
 ![Screenshot 2024-08-23 214203](https://github.com/user-attachments/assets/c2c50c96-1c3b-4157-ae51-743cbc3a1812)
 
 ## RESULT:
