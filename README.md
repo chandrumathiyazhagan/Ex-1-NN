@@ -38,7 +38,7 @@ STEP 4:Encoding categorical data<BR>
 STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
-##  PROGRAM:
+#  PROGRAM:
 
 ## IMPORT LIBRARIES:
 ```python
@@ -101,7 +101,7 @@ print(X_test)
 print("\nLenght of X_test ",len(X_test))
 ```
 
-## OUTPUT:
+# OUTPUT:
 
 ## DATASET:
 ![Screenshot 2024-08-23 214023](https://github.com/user-attachments/assets/ed7528c4-f262-4420-9ed0-737c76e6b0ca)
