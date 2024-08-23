@@ -2,7 +2,9 @@
 <H3>ENTER YOUR REGISTER NO : 212222230026</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE : 22-08-2024</H3>
+
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
+
 
 ## AIM:
 
@@ -38,7 +40,7 @@ STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
 
-# IMPORT LIBRARIES:
+## IMPORT LIBRARIES:
 ```python
 from google.colab import files
 import pandas as pd
@@ -47,23 +49,23 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 ```
-# READ THE DATASET FROM DRIVE:
+## READ THE DATASET FROM DRIVE:
 ```python
 df=pd.read_csv('neural.csv')
 print(df)
 ```
-# SPLIT THE DATASET:
+## SPLIT THE DATASET:
 ```python
 X=df.iloc[:, :-1].values
 print(X)
 Y=df.iloc[:, -1].values
 print(Y)
 ```
-# FINDING MISSING VALUES:
+## FINDING MISSING VALUES:
 ```python
 print(df.isnull().sum())
 ```
-# HANDLING MISSING VALUES:
+## HANDLING MISSING VALUES:
 ```python
 df.describe()
 ```
@@ -71,24 +73,24 @@ df.describe()
 ```python
 df.duplicated()
 ```
-# DETECT OUTLIERS:
+## DETECT OUTLIERS:
 ```python
 df.describe()
 ```
-# DROPPING STRING VALUES DATA FROM DATASET:
+## DROPPING STRING VALUES DATA FROM DATASET:
 ```python
 data = df.drop(['Surname', 'Geography','Gender'], axis=1)
 ```
 ```python
 data.head()
 ```
-# NORMALIZE THE DATASET (MINMAX SCALER):
+## NORMALIZE THE DATASET (MINMAX SCALER):
 ```python
 scaler=MinMaxScaler()
 df1=pd.DataFrame(scaler.fit_transform(data))
 print(df1)
 ```
-# SPLITTING THE DATA FOR TRAINING & TESTING:
+## SPLITTING THE DATA FOR TRAINING & TESTING:
 ```python
 X_train ,X_test ,Y_train,Y_test=train_test_split(X,Y,test_size=0.2)
 print("X_train\n")
@@ -105,10 +107,10 @@ print("\nLenght of X_test ",len(X_test))
 ![Screenshot 2024-08-23 214023](https://github.com/user-attachments/assets/ed7528c4-f262-4420-9ed0-737c76e6b0ca)
 
 # SPLIT THE DATASET:
-# X
+### X
 ![Screenshot 2024-08-23 214039](https://github.com/user-attachments/assets/670c9242-5b81-4c6d-9d51-236d5b07c915)
 
-# Y
+### Y
 ![Screenshot 2024-08-23 214049](https://github.com/user-attachments/assets/8aa8e8dd-9e7e-4a4f-81b3-7ebf979ee567)
 
 # MISSING DATA:
